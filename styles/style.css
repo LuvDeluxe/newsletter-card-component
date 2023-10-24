@@ -4,4 +4,107 @@
   box-sizing: border-box;
 }
 
-/* write your CSS here */
+.main-component {
+  font-weight: 500;
+  font-family: Optima, sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: rgb(230, 233, 249);
+}
+
+.main-component-wrapper {
+  min-width: 49vw;
+  min-height: 39vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 15px;
+  box-shadow: 5px 5px 0 0 rgba(241, 242, 251, 1);
+}
+
+.main-component-wrapper h1 {
+  font-size: 1.9rem;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+}
+
+.main-component-wrapper p {
+  max-width: 75rch;
+  line-height: 1.2;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+.main-component-wrapper form {
+  margin-bottom: 1rem;
+}
+
+.main-component-wrapper label {
+  font-size: 0.7rem;
+  margin-left: 0.5rem;
+}
+
+.newsletter-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.subscribe-wrapper input {
+  background-color: rgb(230, 233, 249);
+  height: 2.4rem;
+  width: 30rem;
+  font-size: 1rem;
+  font-weight: 500;
+  text-indent: 15px;
+  border: 1px solid rgb(160, 164, 190);
+  border-radius: 6px;
+}
+
+.subscribe-wrapper button {
+  background-color: black;
+  color: white;
+  width: 5.7rem;
+  height: 2.5rem;
+  margin-left: 6px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.subscribe-wrapper button:hover {
+  cursor: pointer;
+}
+
+::placeholder {
+  color: rgb(160, 164, 190);
+}
+
+@media screen and (max-width: 581px) {
+  .main-component-wrapper {
+    width: 35vw;
+    min-height: 50vh;
+    padding: 1rem;
+  }
+
+  .subscribe-wrapper input {
+    margin-bottom: 1.2rem;
+    width: 28vw;
+    font-size: 0.45rem;
+  }
+}
+
+@media screen and (max-width: 362px) {
+  .main-component-wrapper {}
+
+  .subscribe-wrapper input {
+    font-size: 0.37rem;
+  }
+}
