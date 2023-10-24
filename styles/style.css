@@ -16,6 +16,15 @@
   background-color: rgb(230, 233, 249);
 }
 
+.main-component-wrapper:hover {
+  transform: scale(1.05);
+  transition: 1s;
+}
+
+.main-component-wrapper:not(:hover) {
+  transition: transform 1s;
+}
+
 .main-component-wrapper {
   min-width: 49vw;
   min-height: 39vh;
@@ -102,8 +111,6 @@
 }
 
 @media screen and (max-width: 362px) {
-  .main-component-wrapper {}
-
   .subscribe-wrapper input {
     font-size: 0.37rem;
   }
